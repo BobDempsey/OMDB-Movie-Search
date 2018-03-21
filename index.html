@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>OMDb Movie Search</title>
+    <!-- SEO -->
+    <meta name="description" content="OMDb Movie Search">
+    <meta name="keywords" content="JavaScript, jQuery, CSS, API, OMDb, Web App">
+    <meta name="author" content="Bob Dempsey">
+    <!-- Favicon -->
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap 4 core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="navy-blue-skin">
+
+    <!--Main Navigation-->
+    <header>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+            <a class="navbar-brand" href="https://bobd.me/apps/omdb-movie-search/index.html">
+                <strong>OMDb Movie Search - Bob Dempsey</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+                <ul class="navbar-nav">
+                        <li class="nav-item">
+                                <a class="nav-link" href="https://bobd.me/">
+                                    <i class="fa fa-arrow-left"></i> BobD.Me</a>
+                            </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://bobd.me/apps/">
+                            <i class="fa fa-th"></i> Apps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://bobd.me/apps/omdb-movie-search/subscribe.html">
+                            <i class="fa fa-bell"></i> Subscribe</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="https://bobd.me/apps/omdb-movie-search/contact.html">
+                                <i class="fa fa-envelope"></i> Contact</a>
+                        </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <!--Main Navigation-->
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!--Jumbotron-->
+            <div class="jumbotron text-center grey lighten-3">
+                <!--Title-->
+                <h1 class="card-title h1-responsive font-bold mt-3">
+                    <strong>OMDb Movie Search</strong>
+                </h1>
+                <!--Subtitle-->
+                <p class="pt-2 font-bold indigo-text">
+                    <strong>Search for Any Movie</strong>
+                </p>
+                <div class="row align-items-center justify-content-center mt-3">
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <p class="card-text my-3" style="max-width: 43rem;">This web application uses jQuery, Axios, Bootstrap 4, & Local Session Storage to search the OMDb
+                            public API
+                        </p>
+                        <!-- Material Input / Search Form-->
+                        <form id="searchForm" class="md-form mt-5">
+                            <input type="text" id="searchText" class="form-control">
+                            <label for="searchText">Search Movie</label>
+                            <a class="btn-floating blue-gradient btn-large" id="searchBtn">
+                                <!-- Search Spinner -->
+                                <div id="searchSpinner">
+                                    <div class="preloader-wrapper small active crazy">
+                                        <div class="spinner-layer spinner-blue-only">
+                                            <div class="circle-clipper left">
+                                                <div class="circle"></div>
+                                            </div>
+                                            <div class="gap-patch">
+                                                <div class="circle"></div>
+                                            </div>
+                                            <div class="circle-clipper right">
+                                                <div class="circle"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Search Spinner -->
+                                <i class="fa fa-search"></i>
+                            </a>
+                    </div>
+                    </form>
+                    <!--Grid column-->
+                </div>
+            </div>
+            <!--Jumbotron-->
+            <!-- Cards/Output Row -->
+            <div class="row" id="movies">
+                <!-- Output Appended HERE -->
+            </div>
+            <!-- Cards/Output Row -->
+        </div>
+        <!--Container-->
+
+        <!--Footer-->
+        <footer class="page-footer font-small elegant-color">
+            <!--Copyright-->
+            <div class="footer-copyright py-3 text-center">
+                © 2018 Copyright:
+                <a href="https://bobd.me/"> BobD.Me </a>
+            </div>
+            <!--/.Copyright-->
+        </footer>
+        <!--/.Footer-->
+    </main>
+    <!--Main Content-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- App JS -->
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

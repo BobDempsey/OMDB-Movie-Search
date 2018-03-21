@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>OMDb Movie Search</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap 4 core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="navy-blue-skin">
+  <!--Main Navigation-->
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+      <a class="navbar-brand" href="https://bobd.me/apps/omdb-movie-search/index.html">
+        <strong>OMDb Movie Search - Bob Dempsey</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="https://bobd.me/">
+                    <i class="fa fa-arrow-left"></i> BobD.Me</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://bobd.me/apps/">
+              <i class="fa fa-th"></i> Apps</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="https://bobd.me/apps/omdb-movie-search/subscribe.html">
+                  <i class="fa fa-bell"></i> Subscribe</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="https://bobd.me/apps/omdb-movie-search/contact.html">
+                  <i class="fa fa-envelope"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!--Main Navigation-->
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <!-- User Feedback Preloader -->
+<div class="col-12">
+    <div class="progress primary-color-dark" id="progressBar">
+        <div class="indeterminate"></div>
+    </div>
+</div>
+      <div class="card mb-3 text-center grey lighten-3" id="movie">
+        <div class="card-body">
+          <!-- Output Renders Here -->
+        </div>
+      </div>
+      <!-- Card Body -->
+    </div>
+    <!-- Container -->
+  </main>
+  <!-- Main Content -->
+
+  <!--Footer-->
+  <footer class="page-footer font-small elegant-color">
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center">
+      © 2018 Copyright:
+      <a href="https://bobd.me/"> BobD.Me </a>
+    </div>
+    <!--/.Copyright-->
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Axios -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- App JS -->
+  <script type="text/javascript" src="js/main.js"></script>
+  <!-- Running getMovie function on load -->
+  <script>
+    getMovie();
+  </script>
+</body>
+</html>

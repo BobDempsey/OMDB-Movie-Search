@@ -1,0 +1,14 @@
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME}\.html -f 
+RewriteRule ^(.*)$ $1.html
+
+Options +MultiViews
+RewriteEngine on
+RewriteBase /apps/omdb-movie-search/
+RewriteCond %{http://bobd.me/apps/omdb-movie-search/} !(\.[^./]+)$
+RewriteCond %{REQUEST_fileNAME} !-d
+RewriteCond %{REQUEST_fileNAME} !-f
+RewriteRule (.*) /$1.html [L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
+RewriteRule ^([^.]+)\.html$ http://bobd.me/apps/omdb-movie-search/$1 [R=301,L]

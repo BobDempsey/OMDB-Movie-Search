@@ -1,0 +1,45 @@
+main {
+  margin-top: 100px;
+}
+
+@media(max-width:767px) {
+  .navbar-brand {
+    font-size: 90%;
+  }
+}
+
+.btn-floating {
+  float: right;
+  position: relative;
+  bottom: 3rem;
+  margin-right: 0;
+}
+
+#movies img, #movie img {
+  width: 100%;
+}
+
+.btn-custom {
+  background-color: #4285f4;
+}
+
+.navy-blue-skin input[type=text]:focus:not([readonly]), .navy-blue-skin input[type=email]:focus:not([readonly]), .navy-blue-skin input[type=number]:focus:not([readonly]), .navy-blue-skin textarea.md-textarea:focus:not([readonly]) {
+  border-color: #3f51b5;
+  box-shadow: 0 1px 0 0 #3f51b5;
+}
+
+.navy-blue-skin input[type=text]:focus:not([readonly])+label, .navy-blue-skin input[type=email]:focus:not([readonly])+label, .navy-blue-skin input[type=number]:focus:not([readonly])+label, .navy-blue-skin textarea.md-textarea:focus:not([readonly])+label {
+  color: #3f51b5;
+}
+
+.preloader-wrapper {
+  margin-top: 6px;
+}
+
+.preloader-wrapper .spinner-blue-only {
+  border-color: #fff;
+}
+
+.container {
+ min-height: 100vh;
+}
